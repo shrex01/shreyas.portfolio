@@ -119,7 +119,7 @@ export function Skills() {
                   {/* {skill.icon} */}
                   <ImageWithFallback
                     src={skill.icon}
-                    alt={skill.icon}
+                    alt={skill.name}
                     className="w-full h-full object-cover rounded"
                   />
                 </motion.div>
