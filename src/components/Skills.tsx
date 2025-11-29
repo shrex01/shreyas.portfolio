@@ -1,7 +1,14 @@
 import { motion, useInView } from 'motion/react';
 import { useRef } from 'react';
 import { ImageWithFallback } from './ImageWithFallback';
-
+import ReactLogo from '../assets/images/skills/react.png';
+import PythonLogo from '../assets/images/skills/python.png';
+import JsLogo from '../assets/images/skills/javascript.png';
+import NxtLogo from '../assets/images/skills/nextjs.webp';
+import TsLogo from '../assets/images/skills/typescript.png';
+import HtmlLogo from '../assets/images/skills/html.png';
+import CssLogo from '../assets/images/skills/css.png';
+import GitLogo from '../assets/images/skills/git.png';
 export function Skills() {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, amount: 0.3 });
@@ -9,42 +16,42 @@ export function Skills() {
   const skills = [
     {
       name: 'React',
-      icon: 'src/assets/images/skills/react.png',
+      icon: ReactLogo,
       color: 'cyan',
     },
     {
       name: 'Python',
-      icon: 'src/assets/images/skills/python.png',
+      icon: PythonLogo,
       color: 'purple',
     },
     {
       name: 'Javascript',
-      icon: 'src/assets/images/skills/javascript.png',
+      icon: JsLogo,
       color: 'purple',
     },
     {
       name: 'Next.js',
-      icon: 'src/assets/images/skills/nextjs.webp',
+      icon: NxtLogo,
       color: 'purple',
     },
     {
       name: 'Typescript',
-      icon: 'src/assets/images/skills/typescript.png',
+      icon: TsLogo,
       color: 'magenta',
     },
     {
       name: 'HTML',
-      icon: 'src/assets/images/skills/html.png',
+      icon: HtmlLogo,
       color: 'green',
     },
     {
       name: 'CSS',
-      icon: 'src/assets/images/skills/css.png',
+      icon: CssLogo,
       color: 'cyan',
     },
     {
       name: 'Git',
-      icon: 'src/assets/images/skills/git.png',
+      icon: GitLogo,
       color: 'purple',
     },
     
