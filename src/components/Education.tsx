@@ -2,7 +2,8 @@ import { motion, useInView } from 'motion/react';
 import { useRef } from 'react';
 import { GraduationCap, Calendar } from 'lucide-react';
 import { ImageWithFallback } from './ImageWithFallback';
-
+import srmLogo from '../assets/images/education/srm.jpg';
+import brindavanLogo from '../assets/images/education/brindavan.jpg';
 export function Education() {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, amount: 0.3 });
@@ -14,7 +15,7 @@ export function Education() {
       specialization: 'Human-Computer Interaction',
       fromDate: 'Aug 2023',
       toDate: 'Aug 2025',
-      icon: 'src/assets/images/srm.jpg',
+      icon: srmLogo,
       color: 'cyan',
     },
     {
@@ -23,7 +24,7 @@ export function Education() {
       specialization: 'Software Engineering',
       fromDate: 'Aug 2019',
       toDate: 'Sep 2022',
-      icon: 'src/assets/images/brindavan.jpg',
+      icon: brindavanLogo,
       color: 'purple',
     },
   ];
