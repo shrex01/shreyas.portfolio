@@ -144,7 +144,7 @@ export function Hero() {
                 transition={{ duration: 0.3 }}
               >
                 <img
-                  src="src/assets/images/profile-headshot.png"
+                  src="../assets/images/profile-headshot.png"
                   alt="Profile"
                   className="w-full h-full object-cover"
                 />
