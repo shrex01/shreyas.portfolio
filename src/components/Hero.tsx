@@ -3,6 +3,7 @@ import { GlowButton } from './GlowButton';
 import { useRef } from 'react';
 import { MapPin } from 'lucide-react';
 import resumePDF from '../assets/docs/ShreyasResume.pdf';
+import profileImage from '../assets/images/profile-headshot.png';
 export function Hero() {
   const ref = useRef(null);
   const { scrollYProgress } = useScroll({
@@ -144,7 +145,7 @@ export function Hero() {
                 transition={{ duration: 0.3 }}
               >
                 <img
-                  src="../assets/images/profile-headshot.png"
+                  src={profileImage}
                   alt="Profile"
                   className="w-full h-full object-cover"
                 />
