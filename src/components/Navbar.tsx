@@ -4,7 +4,7 @@ import { useState } from 'react';
 export function Navbar() {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
   
-  const navItems = ['Home', 'Education', 'Experience', 'Skills', 'Projects', 'GitHub', 'Achievements', 'Contact'];
+  const navItems = ['Home', 'Experience', 'Education', 'Skills', 'Projects', 'GitHub', 'Achievements', 'Contact'];
 
   const scrollToSection = (item: string) => {
     const element = document.getElementById(item.toLowerCase());

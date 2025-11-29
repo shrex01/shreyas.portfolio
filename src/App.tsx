@@ -21,8 +21,8 @@ export default function App() {
       {/* Main content */}
       <main className="relative z-10">
         <Hero />
-        <Education />
         <Experience />
+        <Education />
         <Skills />
         <Projects />
         <GitHubStats />
