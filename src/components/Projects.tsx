@@ -1,6 +1,9 @@
 import { motion, useInView } from 'motion/react';
 import { useRef } from 'react';
 import { ProjectCard } from './ProjectCard';
+import TaskMasterVideo from '../assets/videos/Taskmaster-ScreenRecording.mp4';
+import padosiImage from '../assets/images/projects/padosi.JPG';
+import roofersImage from '../assets/images/projects/roofers.png';
 
 export function Projects() {
   const ref = useRef(null);
@@ -11,7 +14,7 @@ export function Projects() {
       title: 'Taskmaster (Jira Clone)',
       category: 'Full Stack Development',
       description: 'AI-powered interface design tool for creating adaptive user experiences.',
-      mediaUrl: 'src/assets/videos/Taskmaster-ScreenRecording.mp4',
+      mediaUrl: TaskMasterVideo,
       mediaType: 'video',
       tags: ['Next.js', 'Appwrite', 'Typescript', 'TailwindCSS', 'Hono'],
       color: 'purple',
@@ -20,7 +23,7 @@ export function Projects() {
       title: 'Padosi (Apartment Complex Management & Security)',
       category: 'Full Stack Development',
       description: 'A cinematic portfolio experience with immersive 3D effects and smooth animations.',
-      mediaUrl: 'src/assets/images/padosi.JPG',
+      mediaUrl: padosiImage,
       mediaType: 'image',
       tags: ['React', 'Javascript', 'Supabase'],
       color: 'cyan',
@@ -29,7 +32,7 @@ export function Projects() {
       title: 'Roofers Real Estate',
       category: 'Desktop App Development',
       description: 'Real estate property management software',
-      mediaUrl: 'src/assets/images/roofers.png',
+      mediaUrl: roofersImage,
       mediaType: 'image',
       tags: ['VB.net', 'MySql'],
       color: 'magenta',
