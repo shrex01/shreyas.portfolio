@@ -21,6 +21,13 @@ export function Hero() {
     }
   };
 
+  const scrollToSection = (item: string) => {
+    const element = document.getElementById(item.toLowerCase());
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <section id="home" ref={ref} className="relative min-h-screen flex items-center justify-center overflow-hidden">
       <motion.div 
@@ -110,6 +117,7 @@ export function Hero() {
                 className="px-8 py-4 border border-white/20 text-white hover:border-white/40 transition-all tracking-wider uppercase"
                 whileHover={{ scale: 1.05, borderColor: 'rgba(0, 240, 255, 0.5)' }}
                 whileTap={{ scale: 0.98 }}
+                onClick={() => scrollToSection('Contact')}
               >
                 Get in Touch
               </motion.button>

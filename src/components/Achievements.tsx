@@ -1,7 +1,11 @@
 import { motion, useInView } from 'motion/react';
 import { useRef } from 'react';
 import { Award, Trophy, Star } from 'lucide-react';
-
+import HackerRankCertification from '../assets/images/certificates/hackerRankfrontendReact.png';
+import NamasteJsCertification from '../assets/images/certificates/namastejavascript.jpg';
+import JspidersReactJsCertification from '../assets/images/certificates/jspidersReact.jpg';
+import JspidersJavaFullstackCertification from '../assets/images/certificates/jspidersJavafullstack.jpg';
+import NiCTCertification from '../assets/images/certificates/Nict.jpg';
 export function Achievements() {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, amount: 0.2 });
@@ -11,35 +15,35 @@ export function Achievements() {
       title: 'Frontend Developer (React)',
       issuer: 'HackerRank Certification',
       date: '2025',
-      imageUrl: 'src/assets/images/hackerRankfrontendReact.png',
+      imageUrl: HackerRankCertification,
       color: 'cyan',
     },
     {
       title: 'Namaste JavaScript',
       issuer: 'NamasteDev.com',
       date: '2024',
-      imageUrl: 'src/assets/images/namastejavascript.jpg',
+      imageUrl: NamasteJsCertification,
       color: 'purple',
     },
     {
       title: 'Jspiders React Certification',
       issuer: 'Jspiders Institute Bengaluru',
       date: '2023',
-      imageUrl: 'src/assets/images/jspidersReact.jpg',
+      imageUrl: JspidersReactJsCertification,
       color: 'magenta',
     },
     {
       title: 'Jspiders Java Fullstack Certification',
       issuer: 'Jspiders Institute Bengaluru',
       date: '2023',
-      imageUrl: 'src/assets/images/jspidersJavafullstack.jpg',
+      imageUrl: JspidersJavaFullstackCertification,
       color: 'green',
     },
     {
       title: 'Post Graduation Diploma in Advance Programming Language',
       issuer: 'NICT Computer Education pvt ltd',
       date: '2019',
-      imageUrl: 'src/assets/images/Nict.jpg',
+      imageUrl: NiCTCertification,
       color: 'green',
     },
     
